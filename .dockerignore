@@ -1,0 +1,30 @@
+# Ignore node modules everywhere
+node_modules/
+
+# Logs
+*.log
+logs/
+npm-debug.log
+yarn-error.log
+
+# Build output
+dist/
+build/
+
+# System files
+.DS_Store
+
+# IDE folders
+.vscode/
+.idea/
+
+# Environment & config files that should not go to Docker
+.env
+
+# Tests
+__tests__/
+test/
+coverage/
+
+# Root-level things that should not be copied into image build context
+docker-compose.yml

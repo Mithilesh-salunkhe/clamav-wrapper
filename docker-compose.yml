@@ -1,0 +1,34 @@
+#version: '3.9'
+
+services:
+  clamav-service:
+    build: ./clamav
+    container_name: clamav-service
+    ports:
+      - "3310:3310"
+    volumes:
+      - clamav_db:/var/lib/clamav
+    # restart: always
+    mem_limit: 4g
+    memswap_limit: 4g
+    healthcheck:
+      test: ["CMD-SHELL", "echo PING | nc 127.0.0.1 3310 | grep PONG || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  wrapper-service:
+    build: ./wrapper-service
+    container_name: wrapper-service
+    ports:
+      - "3000:3000"
+    environment:
+      CLAMAV_HOST: clamav-service
+      CLAMAV_PORT: 3310
+    depends_on:
+      clamav-service:
+        condition: service_healthy
+    # restart: always
+
+volumes:
+  clamav_db:
