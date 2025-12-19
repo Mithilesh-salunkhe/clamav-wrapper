@@ -54,7 +54,7 @@ Explains available endpoints:
 Includes request format, responses, and status codes.
 
 **Reference PDF:**  
-- [ClamAV Wrapper API Documentation](Documentation/ClamAV_Wrapper_Api_Documentation.pdf)
+- [ClamAV Wrapper API Documentation](Documentation/Clam_Av_Wrapper_Api_Documentation.pdf)
 
 👉 Read this after services are running
 
