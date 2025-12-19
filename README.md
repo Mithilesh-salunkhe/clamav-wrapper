@@ -37,7 +37,7 @@ To correctly deploy and use the service, read the documentation in the following
 Explains system requirements, Docker setup, folder usage, and how to run services on a machine.
 
 **Reference PDF:**  
-- `docs/Target_Machine_Deployment_Guide.pdf`
+- [Target Machine Deployment Documentation](Documentation/ClamAV_Wrapper_Target_Machine_Deployment_Documentation_3.pdf)
 
 👉 Read this before doing anything else
 
@@ -54,7 +54,7 @@ Explains available endpoints:
 Includes request format, responses, and status codes.
 
 **Reference PDF:**  
-- `docs/API_Documentation.pdf`
+- [ClamAV Wrapper API Documentation](Documentation/ClamAV_Wrapper_Api_Documentation.pdf)
 
 👉 Read this after services are running
 
@@ -71,7 +71,7 @@ Explains how to safely modify:
 - ClamAV daemon limits
 
 **Reference PDF:**  
-- `docs/ClamAV_Configuration_Guide.pdf`
+- [ClamAV Configuration Manual](Documentation/clamav_config_manual_2.pdf)
 
 👉 Read this only if configuration changes are required
 
