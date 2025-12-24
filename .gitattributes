@@ -1,0 +1,7 @@
+# Force LF line endings for ClamAV configs
+clamd.conf     text eol=lf
+freshclam.conf text eol=lf
+
+# Optional: Docker-related files
+Dockerfile     text eol=lf
+*.sh           text eol=lf

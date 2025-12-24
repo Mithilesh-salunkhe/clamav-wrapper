@@ -1,4 +1,4 @@
-import net from "net";
+import net from "net";//net module provides an asynchronous network API for creating stream-based TCP or IPC servers and clients.
 import { ScanResult } from "../types/scanResults";
 import { scanConfig } from "../config/scan.config";
 
