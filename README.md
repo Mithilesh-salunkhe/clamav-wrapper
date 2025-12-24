@@ -82,4 +82,3 @@ Explains how to safely modify:
 ### Mandatory
 
 - Docker Desktop
-- WSL 2 (on Windows)
